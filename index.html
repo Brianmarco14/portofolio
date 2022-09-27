@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="WOW-master/css/libs/animate.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .btn:hover{
+        transform:translateX(.30rem);
+        transition:.3s;
+      }
+      .card:hover{
+        transform:translateX(.30rem);
+        transition:.3s;
+        background-color: #ffc107;
+        opacity: 0.8;
+      }
+      .profil{
+        margin-left: -300px;
+        width: 250px;
+        height: 300px;
+      }
+      .home-container{
+        margin-left: 6rem;
+      }
+      .keterangan{
+        margin-right: 20px;
+      }
+      .pro{
+        width: 350px;
+        height: 350px;
+      }
+
+      .lebih{
+        display: flex;
+        flex-direction: row;
+      }
+      .brand-container{
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
+      .brand-container .container{
+        width: 50%;
+        align-items: center;
+        height: 100%;
+      }
+      .images{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-image: url(img/circle.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60vh;
+        width: 25%;
+      }
+      .njir{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      }
+      @media screen and (max-width: 680px) {
+        .container{
+            margin-left: 0;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .profil{
+          margin-top: -300px;
+          margin-left: 2%;
+          width: 200px;
+          height: 250px;
+        }
+        .pro{
+            width:250px;
+            height: 250px;
+        }
+        .service-container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .lebih{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+        }
+        .lebih .col{
+            width: 50%;
+        }
+        .brand-container{
+          flex-direction: column;
+          margin-left: 0;
+          align-items: center;
+        }
+        .brand-container img{
+          width: 300px;
+          height: 300px;
+          margin-top: 5px;
+        }
+        .service-container{
+          overflow: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+<!-- <====NAVBAR START====> -->
+    <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-10 mb-5">
+        <div class="container">
+          <a class="navbar-brand ms-5" href="#">Personal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link link-warning" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark" href="#service">Services</a>
+              </li>
+              <a class="btn btn-warning rounded-pill ms-3 p-2 fw-bold shadow" style="color: #fff;" href="#">Contact</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- <====NAVBAR END====> -->
+<main>
+<!-- <====CONTENT1 START====> --> 
+    <section class="home-container " id="about" style="margin-top: 15vh;">
+        <div class="container d-flex pe-5 ps-5 ">
+          <div class="keterangan">
+            <h1 class="home-title">Hi! I Am</h1>
+            <h1 class="title wow bounceInDown" style="color: #ffc107;">Brian Marco Agustian</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum odit doloremque sed, deserunt </p>
+            <a class="btn btn-warning pe-5 mt-5 ps-5 rounded-pill fw-bold shadow" style="color: #fff;" href="#">Hire</a>
+          </div>
+          <img src="img/bg1.png" class="pro" alt="">
+          <img class="profil" src="img/foto1.png" alt=""> 
+        </div>
+         
+    </section>
+<!-- <====CONTENT1 END====> -->
+
+<!-- <====CONTENT2 START====> -->
+    <section class="service-container d-flex text-center" id="service" style="margin-top: 20vh;">
+        <div class="container">
+            <h2>My Awesome</h2>
+            <h2 class="title wow bounceInDown" style="color: #ffc107;">Services</h2>    
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum odit doloremque sed, deserunt </p>
+            <a class="btn btn-warning pe-5 ps-5 rounded-pill fw-bold shadow" style="color: #fff;" href="#">Download CV</a>
+        </div>
+    </section>
+    <div class="lebih row d-flex justify-content-end">
+        <div class="col-md-3 card border-light shadow mt-5 p-5 me-5 text-center d-flex flex-column align-items-center">
+            <img src="img/programming.png" style="width: 5rem;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Programming</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-light shadow fw-bold link-primary p-3 mt-4">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-3 card border-light shadow mt-5 me-5 p-5 text-center d-flex flex-column align-items-center">
+            <img src="img/paint-palette.png" style="width: 5rem;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Design</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-light shadow fw-bold link-primary p-3 mt-4">Learn More</a>
+            </div>
+        </div>
+        <div class="col-md-3 ps-2 card border-light shadow mt-5 me-5 p-5 text-center d-flex flex-column align-items-center">
+            <img src="img/ux.png" style="width: 5rem;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">UI/UX</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-light shadow fw-bold link-primary p-3 mt-4">Learn More</a>
+            </div>
+        </div>
+      </div>
+    <br><br><br>
+<!-- <====CONTENT2 END====> -->
+
+<!-- <====CONTENT3 START====> -->
+      <section class="brand-container d-flex" id="service" style="margin-top: 10vh;">
+        <div class="container text-center align-middle">
+            <h2>Work for All This</h2>
+            <h2 class="title wow bounceInDown" style="color: #ffc107;">Brand & Client</h2>    
+            <p>Lorem ipsum dolor sit,</p>
+            <a class="btn btn-warning pe-5 ps-5 rounded-pill fw-bold shadow" style="color: #fff;" href="#">Detail</a>
+        </div>
+        <div class="images">
+            <div class="row njir">
+              <div class="col d-flex justify-content-around">
+                <img src="img/shopify.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+                <img src="img/chrome.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+                <img src="img/skype.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+              </div>   
+              <div class="col d-flex justify-content-around">
+                <img src="img/git.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+                <img src="img/gitlab.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+                <img src="img/dropbox.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+              </div>   
+              <div class="col d-flex justify-content-around">
+                <img src="img/firefox.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+                <img src="img/amazon-pay.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+                <img src="img/shopify.png" class="rounded-circle p-2 bg-warning bg-opacity-25" alt="" style="width: 80px;height:80px;">
+              </div>   
+          </div>
+        </div>
+
+      </section>
+<!-- <====CONTENT3 END====> -->
+
+<!-- <====CONTENT4 START====> -->
+      <section class="recent card p-5 mt-5">
+        <div class="text text-center p-5">
+            <h1>Recent Project</h1>
+            <p>lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, suscipit ea dolor illo quidem aperiam obcaecati fuga officiis beatae ullam nobis amet laudantium nam, esse possimus consequatur perspiciatis hic quas!</p>    
+        </div>
+        <div class="autoplay d-flex justify-content-center pe-0" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
+          <div>
+            <img src="img/p1.jpg" width="450px" alt="...">
+          </div>
+          <div>
+            <img src="img/p2.jpg"width="450px" alt="...">
+          </div>
+          <div>
+            <img src="img/p3.jpg" width="450px" alt="...">
+          </div>
+          <div>
+            <img src="img/p4.jpg" width="450px"  alt="...">
+          </div>
+          <div>
+            <img src="img/p5.jpg" width="450px" alt="...">
+          </div>
+        </div>
+      </section>
+
+<!-- <====CONTENT4 END====> -->
+
+<section class="last-container d-flex pe-5 ps-5 mb-5" id="about" style="margin-top: 15vh;">
+  <div class="container p-5 text-center" style="background-color: rgb(231, 213, 110);" >
+      <h1 class="home-title wow bounceInDown" style="color: #fff;">Got a project? let's talk</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum odit doloremque sed, deserunt Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum laudantium distinctio quisquam dolor fugit nulla necessitatibus, est possimus alias doloremque, ducimus quis unde ullam repudiandae quos! Magni delectus officia voluptates. </p>
+      <a class="btn btn-warning pe-5 ps-5 rounded-pill fw-bold shadow" style="color: #fff;" href="#">Hire</a>
+  </div>
+
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="WOW-master/dist/wow.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    
+<script>   
+
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+</script>
+<script>
+   wow = new WOW({
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    }
+    )
+    wow.init();
+</script>
+  </body>
+</html>
